@@ -4,3 +4,5 @@ crab_plot <- function(file.path){
 }
 
 crab_plot("data/crabs.csv")
+
+The script will create a jitter plot of body depth by sex.

@@ -6,3 +6,5 @@ anova_crabs <- function(file.path){
 }
 
 anova_crabs("data/crabs.csv")
+
+The script creates an anova table with the assumption that body depth is predicted by sex.
