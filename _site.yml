@@ -3,7 +3,5 @@ navbar:
   title: "Crab Prediction"
   left:
     - text: "Tutorial"
-      href: PackageTutorial.html
-    - text: "Home"
       href: index.html
 output_dir: "docs"
