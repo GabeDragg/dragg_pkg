@@ -4,13 +4,7 @@
 #' 
 #' @return Returns the ANOVA table with the assumption that body depth is predicted by sex of the crabs.
 #' 
-#' @examples 
-#' anova_crabs(file.path)
-#' 
-#install.packages("tidyverse")
-#library(tidyverse)
-#install.packages("ggplot2")
-#library(ggplot2)
+#' @importFrom stats aov lm
 
 anova_crabs <- function(file.path){
   fit_crabs <- lm(body_depth ~ sex, data = crabs)
@@ -18,7 +12,3 @@ anova_crabs <- function(file.path){
   sum_fit_crabs <- summary(anova_fit_crabs)
   return(sum_fit_crabs)
 }
-
-anova_crabs("data/crabs.csv")
-
-The script creates an anova table with the assumption that body depth is predicted by sex.

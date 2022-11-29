@@ -4,19 +4,9 @@
 #' 
 #' @return Returns the jitter plot of the sex of the crabs against body depth
 #' 
-#' @examples
-#' crab_plot(file.path)
-#' 
-#install.packages("tidyverse")
-#library(tidyverse)
-#install.packages("ggplot2")
-#library(ggplot2)
 
 crab_plot <- function(file.path){
+  ggplot2::ggplot = aes = geom_jitter = NULL
   plot <- ggplot(crabs, aes(x = sex, y = body_depth, color = sex)) + geom_jitter()
   return(plot)
 }
-
-crab_plot("data/crabs.csv")
-
-The script will create a jitter plot of body depth by sex.

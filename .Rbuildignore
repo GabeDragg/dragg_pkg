@@ -1,0 +1,9 @@
+^LICENSE\.md$
+^.*\.Rproj$
+^\.Rproj\.user$
+^project.3\.Rcheck$
+^project.3.*\.tar\.gz$
+^project.3.*\.tgz$
+^project.crab.prediction\.Rcheck$
+^project.crab.prediction.*\.tar\.gz$
+^project.crab.prediction.*\.tgz$

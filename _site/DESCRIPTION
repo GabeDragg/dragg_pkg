@@ -1,0 +1,17 @@
+Package: project.crab.prediction
+Title: Functions to Predict Body Depth by Sex in Crabs
+Version: 0.0.0.9000
+Authors@R: 
+    person("Gabe", "Dragg", , "gabriel.dragg@selu.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: Contains functions to show variation in body depth across sex in crabs to determine if sex predicts body depth.
+License: MIT + file LICENSE
+Depends:
+  R (>= 2.10)
+Imports:
+Suggests:
+  knitr, rmarkdown
+VignetteBuilder: knitr
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.2

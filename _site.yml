@@ -1,0 +1,6 @@
+name: "Final-Project-Crab-Prediction"
+navbar:
+  title: "Crab Prediction"
+  left:
+    - text: "Tutorial"
+      href: PackageTutorial.html
