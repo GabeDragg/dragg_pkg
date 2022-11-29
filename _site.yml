@@ -2,8 +2,8 @@ name: "Final-Project-Crab-Prediction"
 navbar:
   title: "Crab Prediction"
   left:
-    - text: "Home"
-      href: index.html
     - text: "Tutorial"
       href: PackageTutorial.html
+    - text: "Home"
+      href: index.html
 output_dir: "docs"
