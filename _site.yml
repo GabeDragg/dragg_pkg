@@ -4,3 +4,4 @@ navbar:
   left:
     - text: "Tutorial"
       href: PackageTutorial.html
+output_dir: "."
