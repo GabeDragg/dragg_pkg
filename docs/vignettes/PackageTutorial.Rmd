@@ -1,0 +1,52 @@
+---
+title: "Package Tutorial"
+author: "Gabe Dragg"
+date: "2022-11-28"
+output: html_document
+---
+
+# Crab Prediction
+
+### Installation Instructions
+
+This package uses the data from crabs.csv. The data can be downloaded from Moodle [here](https://moodle.selu.edu/moodle/mod/resource/view.php?id=4095991&redirect=1). Download the data into the data directory, and assign it to the variable "crabs".
+
+```{r eval=FALSE, include=TRUE}
+crabs <- read.csv("data/crabs.csv")
+```
+
+
+```{r eval=FALSE, include=TRUE}
+install.packages("project.crab.prediction")
+```
+
+```{r eval=FALSE, include=TRUE}
+library(project.crab.prediction)
+```
+
+### Functions Included in the Package
+
+#### Anova Function
+The anova function performs a statistical test using variance to determine if there is a significant difference between body depth and the sex in crabs. This is a useful function because it helps to determine if sex predicts body depth in crabs.
+
+Example
+```{r eval=FALSE, include=TRUE}
+anova_crabs(file.path)
+```
+
+#### Jitterplot Function
+The jitterplot function plots sex against body depth in crabs. The purpose of this function is to provide a visual representation of the relationship between body depth and sex in crabs.
+
+Example
+```{r eval=FALSE, include=TRUE}
+crab_plot(file.path)
+```
+
+#### Column Rename Function
+The column rename function renames the "body_depth" column to "crab_body_depth" which provides use because it gives a more descriptive name.
+
+Example
+```{r eval=FALSE, include=TRUE}
+crab_col(file.path)
+```
+

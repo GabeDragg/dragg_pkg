@@ -9,9 +9,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
+<meta name="author" content="Gabe Dragg" />
 
+<meta name="date" content="2022-11-28" />
 
-<title>LICENSE</title>
+<title>Package Tutorial</title>
 
 <script src="site_libs/header-attrs-2.18/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -257,29 +259,54 @@ $(document).ready(function () {
 
 
 
+<h1 class="title toc-ignore">Package Tutorial</h1>
+<h4 class="author">Gabe Dragg</h4>
+<h4 class="date">2022-11-28</h4>
 
 </div>
 
 
-<div id="mit-license" class="section level1">
-<h1>MIT License</h1>
-<p>Copyright (c) 2022 project.crab.prediction authors</p>
-<p>Permission is hereby granted, free of charge, to any person obtaining
-a copy of this software and associated documentation files (the
-“Software”), to deal in the Software without restriction, including
-without limitation the rights to use, copy, modify, merge, publish,
-distribute, sublicense, and/or sell copies of the Software, and to
-permit persons to whom the Software is furnished to do so, subject to
-the following conditions:</p>
-<p>The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.</p>
-<p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
-CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
-TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
-SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+<div id="crab-prediction" class="section level1">
+<h1>Crab Prediction</h1>
+<div id="installation-instructions" class="section level3">
+<h3>Installation Instructions</h3>
+<p>This package uses the data from crabs.csv. The data can be downloaded
+from Moodle <a
+href="https://moodle.selu.edu/moodle/mod/resource/view.php?id=4095991&amp;redirect=1">here</a>.
+Download the data into the data directory, and assign it to the variable
+“crabs”.</p>
+<pre class="r"><code>crabs &lt;- read.csv(&quot;data/crabs.csv&quot;)</code></pre>
+<pre class="r"><code>install.packages(&quot;project.crab.prediction&quot;)</code></pre>
+<pre class="r"><code>library(project.crab.prediction)</code></pre>
+</div>
+<div id="functions-included-in-the-package" class="section level3">
+<h3>Functions Included in the Package</h3>
+<div id="anova-function" class="section level4">
+<h4>Anova Function</h4>
+<p>The anova function performs a statistical test using variance to
+determine if there is a significant difference between body depth and
+the sex in crabs. This is a useful function because it helps to
+determine if sex predicts body depth in crabs.</p>
+<p>Example</p>
+<pre class="r"><code>anova_crabs(file.path)</code></pre>
+</div>
+<div id="jitterplot-function" class="section level4">
+<h4>Jitterplot Function</h4>
+<p>The jitterplot function plots sex against body depth in crabs. The
+purpose of this function is to provide a visual representation of the
+relationship between body depth and sex in crabs.</p>
+<p>Example</p>
+<pre class="r"><code>crab_plot(file.path)</code></pre>
+</div>
+<div id="column-rename-function" class="section level4">
+<h4>Column Rename Function</h4>
+<p>The column rename function renames the “body_depth” column to
+“crab_body_depth” which provides use because it gives a more descriptive
+name.</p>
+<p>Example</p>
+<pre class="r"><code>crab_col(file.path)</code></pre>
+</div>
+</div>
 </div>
 
 
